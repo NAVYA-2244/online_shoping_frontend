@@ -1,0 +1,52 @@
+<html>
+<head> <title> web page list </title> 
+  <link rel="stylesheet"href="./pro.css">
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" 
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<style>
+div{margin-left:400;}
+#abb{margin-left: 1200px;}
+</style>
+
+</head>
+<body style="background-image:url('./Images/wall1.jpg'); background-size:cover;">
+
+<!--java script-->
+<!-- display day -->
+<h6 id="abb"></h6>
+<script>
+  var d = new Date();
+  var day; var month;
+  var dt =d.getDay();
+  var mt = d.getMonth();
+  var month = ['January','February','March','April','May','JUne','July','August','September','October','November','December'];
+  var day=["sun","mon","tue","wed","thu","fri","sat"]
+  var a=document.getElementById("abb");
+  a.style.color="white"
+  a.innerHTML=day[dt]+" "+month[mt]+" "+d.getFullYear();
+  </script>
+<div><a href="./electronics.html">
+<input type="submit" class="btn btn-outline-primary"value="Electronics"></a>
+
+
+<a href="./footwear.html">
+<input type="submit" class="btn btn-outline-primary"value="Footwear"></a>
+
+<a href="./static-webpage.html">
+<input type="submit" class="btn btn-outline-primary"value="Home_page"></a>
+
+<a href="./fashion.html">
+<input type="submit" class="btn btn-outline-primary"value="Fashion"></a>
+
+<a href="./kitchen.html">
+<input type="submit" class="btn btn-outline-primary"value="kitchen"></a>
+
+<a href="./furniture.html">
+<input type="submit" class="btn btn-outline-primary"value="furniture"></a>
+
+<!-- <img src="C:\trainig\office-work\Images\wall2.png" alt="wall"> -->
+</div>
+</body>
+</html>
